@@ -11,18 +11,6 @@ data = keras.datasets.mnist
 
 print(train_images[0].shape)
 
-'''
-new_train_labels = np.zeros([60000,10])
-
-for i in range(len(train_labels)):
-    new_train_labels[i][train_labels[i]] = 1
-
-new_test_labels = np.zeros([10000,10])
-
-for i in range(len(test_labels)):
-    new_test_labels[i][test_labels[i]] = 1
-'''
-
 train_images = train_images.reshape((60000,28,28,1))
 test_images = test_images.reshape((10000,28,28,1))
 
